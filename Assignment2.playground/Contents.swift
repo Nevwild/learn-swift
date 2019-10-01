@@ -139,30 +139,32 @@ enum CellState {
  (Your answers may consist of **ONE** valid swift type or expression, I do NOT want sentences):
 */
 func norm(_ val: Int, to size: Int) -> Int {
-
-	let valModSize: Int = {
-		//print("val", val)
-		//print("size", size)
-		return val % size
-	}()
-
-	let valModSizePlusSize: Int = {
-		//print("size", size)
-		//print("valModSize", valModSize)
-		let valModSizePlusSize = valModSize + size
-		return valModSizePlusSize
-	}()
-
-	let valModSizePlusSizeModSize: Int = {
-		let valModSizePlusSizeModSize = valModSizePlusSize % size
-		return valModSizePlusSizeModSize
-	}()
-
-	return valModSizePlusSizeModSize
+	return ((val % size) + size) % size
 }
 
-norm(250, to: 1000)
-	//return ((val % size) + size) % size }
+//	let valModSize: Int = {
+//		print("val", val)
+//		print("size", size)
+//		return val % size
+//	}()
+//
+//	let valModSizePlusSize: Int = {
+//		print("size", size)
+//		print("valModSize", valModSize)
+//		let valModSizePlusSize = valModSize + size
+//		return valModSizePlusSize
+//	}()
+//
+//	let valModSizePlusSizeModSize: Int = {
+//		let valModSizePlusSizeModSize = valModSizePlusSize % size
+//		return valModSizePlusSizeModSize
+//	}()
+//
+//	return valModSizePlusSizeModSize
+//}
+
+//norm(250, to: 1000)
+
 /*:
  1. what is the return type of `norm`
  */
