@@ -147,11 +147,11 @@ let `for` = "for"
  Additionally, it's important to know that this works on non-colliding identifier names:
 */
 let `myConstant` = 123.456
+#warning("TODO: Following line is unclear. Is there supposed to be a keypath version of myconstant? Where is `andmyConstant` declared?")
 /*:
  Also note that `\`myConstant\`` and `myConstant` refer to the same constant:
 */
 myConstant
-
 /*:
 ### Comments
 

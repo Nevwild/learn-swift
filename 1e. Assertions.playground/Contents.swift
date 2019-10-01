@@ -10,11 +10,11 @@ let age = 3
 /*:
  You can assert with a message
 */
-assert(age >= 0, "A person's age cannot be negative")
+assert(age <= 1, "A person's age cannot be negative")
 /*:
  You can assert without the message
 */
-assert(age >= 0)
+assert(age <= 1)
 /*:
  You can force a fatal error.  We do this as a comment here as it will kill the playground on execution.
 ```
