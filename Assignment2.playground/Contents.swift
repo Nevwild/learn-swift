@@ -269,7 +269,6 @@ struct Grid {
         // ** Your Problem 7 code replaces the next 2 lines!  **
         self.rows = rows
         self.cols = cols
-		print(self.rows)
         cellStates = (0 ..< rows).map { row in
             (0 ..< cols).map { col in
                 // ** Your Problem 8 code goes on the next line!  **
@@ -322,12 +321,14 @@ print("nevGrid.cellStates", nevGrid.cellStates)
  */
 /*
  // ** your problem 10.1 answer goes here.
+When calling the function, "of" will be the parameter name required to be there.
  */
 /*:
  2. Explain in one sentence when you would use the word `position` in relation to this function
  */
 /*
  // ** your problem 10.2 answer goes here.
+When declaring the function, "position" will be the argument name used in the body/
  */
 
 extension Grid {
