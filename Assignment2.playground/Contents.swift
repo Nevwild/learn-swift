@@ -368,6 +368,7 @@ print("neighbors max", nevGrid.neighbors(of: Position(10,10)))
 */
 /*
  // ** Your Problem 12 answer goes here **
+Cells a tuple of row and col, and therefore cannot be mutated.
  */
 
 extension Grid {
