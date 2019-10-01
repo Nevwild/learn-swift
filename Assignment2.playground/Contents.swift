@@ -238,7 +238,7 @@ Sequence
  */
 /*
  // ** Your Problem 5 comment goes here! **
-
+Offsets represent the positions of the cells surrounding a cell at a given point.
  */
 /*:
  ## Problem 6:
