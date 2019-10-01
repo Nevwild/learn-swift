@@ -191,7 +191,7 @@ norm <= val
 func positions(rows: Int, cols: Int) -> [Position] {
     return (0 ..< rows).flatMap { zip( [Int](repeating: $0, count: cols) , 0 ..< cols ) }
 }
-print(positions(rows: 10, cols: 3))
+//print(positions(rows: 10, cols: 3))
 /*:
  1. what is the return type of the call to `zip`
  */
@@ -269,14 +269,31 @@ struct Grid {
         // ** Your Problem 7 code replaces the next 2 lines!  **
         self.rows = rows
         self.cols = cols
+		print(self.rows)
         cellStates = (0 ..< rows).map { row in
             (0 ..< cols).map { col in
                 // ** Your Problem 8 code goes on the next line!  **
-                .empty
+				return cellInitializer(row,col)
+
             }
         }
+
     }
 }
+
+var nevGrid = Grid(2, 10, {(row,col)  in
+	if row  == 0 {
+		if col == 0{
+			print(#function, #line)
+			return CellState.born
+		}
+	}
+	return CellState.empty
+})
+
+print("nevGrid.cellStates", nevGrid.cellStates)
+
+
 
 /*:
  The next two problems apply to the extension to `Grid` immediately below.
