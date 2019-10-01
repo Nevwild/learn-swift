@@ -160,6 +160,8 @@ func norm(_ val: Int, to size: Int) -> Int {
 
 	return valModSizePlusSizeModSize
 }
+
+norm(250, to: 1000)
 	//return ((val % size) + size) % size }
 /*:
  1. what is the return type of `norm`
@@ -171,14 +173,13 @@ func norm(_ val: Int, to size: Int) -> Int {
 
  */
 
-norm(250, to: 250)
 
 /*:
  2. In terms of `size`, what is the maximum value that `norm` will return?
  */
 /*
  // ** Your Problem 3.2 answer goes here **
- norm <= size
+norm <= val
  */
 /*:
  ## Problem 4:
