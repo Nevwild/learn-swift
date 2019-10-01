@@ -366,6 +366,7 @@ print("neighbors max", nevGrid.neighbors(of: Position(10,10)))
  ## Problem 12:
  *In ONE sentence* explain why this subscript does not have a set
 */
+#warning("TODO: confirm following answer")
 /*
  // ** Your Problem 12 answer goes here **
 Cells a tuple of row and col, and therefore cannot be mutated.
@@ -374,11 +375,15 @@ Cells a tuple of row and col, and therefore cannot be mutated.
 extension Grid {
     subscript (row: Int, col: Int) -> CellState? {
         get {
-            return nil
+            return cellStates[norm(row, to: self.rows)][norm(col, to: self.cols)]
         }
     }
 }
 
+print("0,0 subscript", nevGrid[0,0])
+print("0,1 subscript", nevGrid[0,1])
+print("2,2 subscript", nevGrid[2,2])
+print("12,2 subscript", nevGrid[12,2])
 /*:
  The next three problems apply to the extension to `Grid` immediately below.
 
