@@ -265,7 +265,7 @@ struct Grid {
     let cellStates: [[CellState]]
     
     // ** Your Problem 6 code goes on the next line! **
-    init(_ rows: Int = 0, _ cols: Int = 0, _ cellInitializer: (Int, Int) -> CellState = { _,_ in .empty } ) {
+    init(_ rows: Int = 10, _ cols: Int = 10, _ cellInitializer: (Int, Int) -> CellState = { _,_ in .empty } ) {
         // ** Your Problem 7 code replaces the next 2 lines!  **
         self.rows = 0
         self.cols = 0
