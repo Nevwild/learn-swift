@@ -141,14 +141,14 @@ enum CellState {
 func norm(_ val: Int, to size: Int) -> Int {
 
 	let valModSize: Int = {
-		print("val", val)
-		print("size", size)
+		//print("val", val)
+		//print("size", size)
 		return val % size
 	}()
 
 	let valModSizePlusSize: Int = {
-		print(size, size)
-		print(valModSize)
+		//print("size", size)
+		//print("valModSize", valModSize)
 		let valModSizePlusSize = valModSize + size
 		return valModSizePlusSize
 	}()
@@ -169,7 +169,7 @@ norm(250, to: 1000)
 /*
  // ** Your Problem 3.1 answer goes here **
 
-//Nevwild - Int
+ Int
 
  */
 
@@ -191,27 +191,37 @@ norm <= val
 func positions(rows: Int, cols: Int) -> [Position] {
     return (0 ..< rows).flatMap { zip( [Int](repeating: $0, count: cols) , 0 ..< cols ) }
 }
-
+print(positions(rows: 10, cols: 3))
 /*:
  1. what is the return type of the call to `zip`
  */
+//1 word requirement: Tuple
+
+//What it actually is:
+//Tuple<Sequence,Sequence>
+
+
 /*
  // ** Your Problem 4.1 answer goes here **
- 
+
+Tuple
+
  */
-/*:
- 2. what is the type of `0 ..< rows`?
- */
+
 /*
  // ** Your Problem 4.2 answer goes here **
- 
- */
+
+Sequence
+
+*/
 /*:
  3. what is the return type of the call to `flatMap`?
  */
 /*
- // ** Your Problem 4.2 answer goes here **
- 
+ // ** Your Problem 4.3 answer goes here **
+
+[Position]
+
  */
 
 /*:
