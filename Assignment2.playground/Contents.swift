@@ -282,17 +282,16 @@ struct Grid {
     }
 }
 
-var nevGrid = Grid(2, 10, {(row,col)  in
-	if row  == 0 {
-		if col == 0{
-			print(#function, #line)
+//Init a grid for testing that has born cells in every position that has an even row && col.
+var nevGrid = Grid(10, 10, {(row,col)  in
+	if row % 2 == 0 && col % 2 == 0{
 			return CellState.born
-		}
 	}
 	return CellState.empty
 })
 
-print("nevGrid.cellStates", nevGrid.cellStates)
+//print("nevGrid.cellStates", nevGrid.cellStates)
+
 
 
 
