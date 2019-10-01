@@ -267,8 +267,8 @@ struct Grid {
     // ** Your Problem 6 code goes on the next line! **
     init(_ rows: Int = 10, _ cols: Int = 10, _ cellInitializer: (Int, Int) -> CellState = { _,_ in .empty } ) {
         // ** Your Problem 7 code replaces the next 2 lines!  **
-        self.rows = 0
-        self.cols = 0
+        self.rows = rows
+        self.cols = cols
         cellStates = (0 ..< rows).map { row in
             (0 ..< cols).map { col in
                 // ** Your Problem 8 code goes on the next line!  **
