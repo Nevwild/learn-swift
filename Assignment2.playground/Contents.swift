@@ -336,10 +336,16 @@ extension Grid {
     func neighbors(of position: Position) -> [Position] {
         return Grid.offsets.map { offset in
             // ** Your Problem 9 Code goes here! replace the following line **
-            return Position(0, 0)
+			var offsetPosition = Position(position.row + offset.row, position.col + offset.col)
+			offsetPosition = Position(norm(offsetPosition.row, to: self.rows), norm(offsetPosition.col, to: self.cols))
+
+            return offsetPosition
         }
     }
 }
+print("neighbors min", nevGrid.neighbors(of: Position(0,0)))
+print("neighbors normal",nevGrid.neighbors(of: Position(2,2)))
+print("neighbors max", nevGrid.neighbors(of: Position(10,10)))
 
 /*:
  The next two problems apply to the extension to `Grid` immediately below.
