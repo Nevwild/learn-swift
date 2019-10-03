@@ -3,12 +3,22 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/nevwild/devRepo/learn-swift/Assignment2.playground#CharacterRangeLen=337&amp;CharacterRangeLoc=6857&amp;EndingColumnNumber=0&amp;EndingLineNumber=166&amp;StartingColumnNumber=0&amp;StartingLineNumber=152&amp;Timestamp=591665925.788391"
+         documentLocation = "file:///Users/nevwild/devRepo/learn-swift/Assignment2.playground#CharacterRangeLen=337&amp;CharacterRangeLoc=6659&amp;EndingColumnNumber=0&amp;EndingLineNumber=163&amp;StartingColumnNumber=0&amp;StartingLineNumber=149&amp;Timestamp=591911691.193789"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/nevwild/devRepo/learn-swift/Assignment2.playground#CharacterRangeLen=214&amp;CharacterRangeLoc=6980&amp;EndingColumnNumber=0&amp;EndingLineNumber=166&amp;StartingColumnNumber=0&amp;StartingLineNumber=157&amp;Timestamp=591665925.788561"
+         documentLocation = "file:///Users/nevwild/devRepo/learn-swift/Assignment2.playground#CharacterRangeLen=214&amp;CharacterRangeLoc=6782&amp;EndingColumnNumber=0&amp;EndingLineNumber=163&amp;StartingColumnNumber=0&amp;StartingLineNumber=154&amp;Timestamp=591911691.195563"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/nevwild/devRepo/learn-swift/Assignment2.playground#CharacterRangeLen=11&amp;CharacterRangeLoc=20283&amp;EndingColumnNumber=0&amp;EndingLineNumber=581&amp;StartingColumnNumber=1&amp;StartingLineNumber=580&amp;Timestamp=591911691.1957459"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/nevwild/devRepo/learn-swift/Assignment2.playground#CharacterRangeLen=11&amp;CharacterRangeLoc=20329&amp;EndingColumnNumber=0&amp;EndingLineNumber=584&amp;StartingColumnNumber=1&amp;StartingLineNumber=583&amp;Timestamp=591911691.19587"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
