@@ -487,8 +487,7 @@ Since the cellInitialization closure uses .randomElement() function to init ~ 1/
 extension Grid {
     func livingNeighbors(of position: Position) -> Int {
         return neighbors(of: position).reduce(0) { (count, position) in
-            // ** Replace the following line with your Problem 17 code
-            0
+			cellStates[position.row][position.col].isAlive ? count + 1 : count
         }
     }
 }
