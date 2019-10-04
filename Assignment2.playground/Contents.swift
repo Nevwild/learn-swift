@@ -567,12 +567,14 @@ func testInitializer(row: Int, col: Int) -> CellState {
 	}
 }
 
+
 /*:
  ## Problem 21 (Bonus):
  In **one word** describe what pattern is produced by the following code
  */
 /*
  // ** Your Problem 21 answer goes here **
+Glider
  */
 grid = Grid(10, 10, testInitializer)
 grid.numLiving
