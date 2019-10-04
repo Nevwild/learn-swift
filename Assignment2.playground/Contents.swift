@@ -126,9 +126,6 @@ enum CellState {
 			return true
 		case .died:
 			return false
-		//Nevwild? - Not sure when to use @unknown default. Assuming that is is there to futureproof against cases of the enum expaning. How should I think about this?
-		@unknown default:
-			return false
 		}
     }
 }
@@ -380,10 +377,10 @@ extension Grid {
     }
 }
 
-print("0,0 subscript", nevGrid[0,0])
-print("0,1 subscript", nevGrid[0,1])
-print("2,2 subscript", nevGrid[2,2])
-print("12,2 subscript", nevGrid[12,2])
+//print("0,0 subscript", nevGrid[0,0])
+//print("0,1 subscript", nevGrid[0,1])
+//print("2,2 subscript", nevGrid[2,2])
+//print("12,2 subscript", nevGrid[12,2])
 /*:
  The next three problems apply to the extension to `Grid` immediately below.
 
@@ -431,6 +428,7 @@ extension Grid {
         return positions(rows: rows, cols: cols).reduce(0) { self[$1.row, $1.col]!.isAlive ? $0 + 1 : $0 }
     }
 }
+//nevGrid.numLiving
 
 /*:
  ## Problem 16:
@@ -462,6 +460,7 @@ var grid = Grid(10, 10) { _, _ in
     .empty
 }
 grid.numLiving
+#warning("TODO: There is no 15.5, should this be 16?")
 /*
  // ** Your Problem 15.5 answer goes here **
  */
@@ -513,7 +512,9 @@ extension Grid {
         return .empty
     }
 }
+//nevGrid.nextState(of: Position(2,1))
 
+#warning("TODO: do the following requirements mean the nextState method from problem 18?")
 /*:
  ## Problem 19:
  In the extension to `Grid` shown below, implement a function next which:
@@ -546,6 +547,7 @@ extension Grid {
 func testInitializer(row: Int, col: Int) -> CellState {
     // ** Replace the following line with your Problem 20 code.**
     return .empty
+	#warning("TODO: Why is the following switch a requirement? Couldn't I do this with just the return statement?")
 }
 
 /*:
@@ -557,15 +559,21 @@ func testInitializer(row: Int, col: Int) -> CellState {
  */
 grid = Grid(10, 10, testInitializer)
 grid.numLiving
+print(grid)
 grid = grid.next()
 grid.numLiving
+print(grid)
 grid = grid.next()
 grid.numLiving
+print(grid)
 grid = grid.next()
 grid.numLiving
+print(grid)
 grid = grid.next()
 grid.numLiving
+print(grid)
 grid = grid.next()
 grid.numLiving
+print(grid)
 
 let theEnd = "The End"
