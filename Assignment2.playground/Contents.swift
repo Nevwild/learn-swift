@@ -545,10 +545,11 @@ extension Grid {
 extension Grid {
     func next() -> Grid {
         // ** Replace the following line for Problem 19 **
-        return Grid(rows, cols)
+		return Grid(rows, cols) { self.nextState(of: Position($0, $1)) }
     }
 }
 
+//print(nevGrid.next())
 /*:
  ## Problem 20:
  In the location shown below implement an initializer which:
