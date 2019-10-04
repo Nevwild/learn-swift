@@ -391,12 +391,15 @@ extension Grid {
  */
 /*
  // ** Your Problem 13.1 answer goes here **
+Int
  */
 /*:
  2. What is the type of the second argument to reduce?
  */
 /*
  // ** Your Problem 13.2 answer goes here **
+Higher order procedure represented as a completion block with the type of
+nextPartialResult: (Result, Element) throws -> Result
  */
 /*:
  ## Problem 14:
