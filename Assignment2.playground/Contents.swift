@@ -461,11 +461,12 @@ extension Grid {
  */
 
 var grid = Grid(10, 10) { _, _ in
-    // ** Your Problem 16 code replaces the following line! **
-    .empty
+	(0 ... 2).randomElement() == 2 ? .alive : .empty
 }
 grid.numLiving
+
 #warning("TODO: There is no 15.5, should this be 16?")
+
 /*
  // ** Your Problem 15.5 (nevwild?- 16) answer goes here **
 Since the cellInitialization closure uses .randomElement() function to init ~ 1/3 of the 100 cells as living instead of programatically setting  exactly 1/3 of the cells as living, .numLiving should return ~ 33 in the 100 cell grid.
