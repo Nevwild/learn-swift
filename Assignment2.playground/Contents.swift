@@ -559,8 +559,12 @@ extension Grid {
  */
 func testInitializer(row: Int, col: Int) -> CellState {
     // ** Replace the following line with your Problem 20 code.**
-    return .empty
+	let birthingCells = [(0,1), (1,2), (2,0), (2,1), (2,2)]
 	#warning("TODO: Why is the following switch a requirement? Couldn't I do this with just the return statement?")
+	switch Position(row,col) {
+	case (let row, let col):
+		return birthingCells.contains { $0 == row && $1 == col } ? .alive : .empty
+	}
 }
 
 /*:
