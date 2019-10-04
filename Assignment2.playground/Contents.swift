@@ -426,6 +426,7 @@ The reduce function iterates over returns a collection of cells whose cellState 
  */
 /*
  // ** Your Problem 15 answer goes here **
+ In self[$1.row, $1.col] $1 represents the current position the reduce function is evaluating.
  */
 extension Grid {
     var numLiving: Int {
@@ -466,8 +467,9 @@ var grid = Grid(10, 10) { _, _ in
 grid.numLiving
 #warning("TODO: There is no 15.5, should this be 16?")
 /*
- // ** Your Problem 15.5 answer goes here **
- */
+ // ** Your Problem 15.5 (nevwild?- 16) answer goes here **
+Since the cellInitialization closure uses .randomElement() function to init ~ 1/3 of the 100 cells as living instead of programatically setting  exactly 1/3 of the cells as living, .numLiving should return ~ 33 in the 100 cell grid.
+*/
 
 
 /*:
