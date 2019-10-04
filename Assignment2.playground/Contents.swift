@@ -411,6 +411,7 @@ nextPartialResult: (Result, Element) throws -> Result
 
 /*
  // ** Your Problem 14 answer goes here **
+The reduce function iterates over returns a collection of cells whose cellState is either .born or .alive. This collection can be used as the foundation for animations of cells.
  */
 
 /*:
