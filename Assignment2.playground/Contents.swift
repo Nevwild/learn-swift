@@ -515,7 +515,13 @@ extension Grid {
 extension Grid {
     func nextState(of position: Position) -> CellState {
         // ** Replace the following line with your Problem 18 code
-        return .empty
+		guard let cell = self[position.row, position.col] else { return .empty }
+		switch livingNeighbors(of: position) {
+		case let liveNeighbors where (2...3).contains(liveNeighbors):
+			return cell.isAlive ? .alive : liveNeighbors == 3 ? .born : .empty
+		default:
+			return cell.isAlive ? .died : .empty
+		}
     }
 }
 //nevGrid.nextState(of: Position(2,1))
